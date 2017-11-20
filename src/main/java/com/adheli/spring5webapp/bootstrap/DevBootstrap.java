@@ -43,9 +43,9 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         this.bookRepository.save(gunSeller);
 
         Publisher publisher2 = new Publisher();
-        publisher.setName("Record");
+        publisher2.setName("Record");
 
-        this.publisherRepository.save(publisher);
+        this.publisherRepository.save(publisher2);
 
         Author lauren = new Author("Lauren", "Weisberger");
         Book dwp = new Book("The Devil Wears Prada", "978-85-01-06803-9", publisher2);
